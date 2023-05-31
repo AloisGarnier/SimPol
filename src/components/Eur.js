@@ -1,34 +1,29 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 export default function Eur(){
 
-    const [parties, setParties] = useState([]);
+    const [parties, setParties] = useState([["", 0]]);
+    const [display, setDisplay] = useState([]);
+
+    useEffect(() => displayParties(), []);
 
     function changeParties(newValue, partyNumber, valueType) {
-        let newParties = [];
-
-        for(let i=0;i<partyNumber;i++) {
-            newParties.push(parties[i]);
-        }
 
         if(valueType=="name") {
-            newParties.push([newValue, parties[partyNumber][1]]);
+            parties[partyNumber] = [newValue, parties[partyNumber][1]];
         } else {
-            newParties.push([parties[partyNumber][0], newValue]);
+            parties[partyNumber] = [parties[partyNumber][0], newValue];
         }
-
-        for(let i=partyNumber+1; i<parties.length; i++) {
-            newParties.push(parties[i]);
-        }
-
-        setParties(newParties);
+        
+        displayParties();
     }
 
-    function displayParties() {
-        let display = [];
+    function displayParties(){
+        console.log(parties);
+        let newDisplay = [];
 
         for(let i=0; i<parties.length; i++) {
-            display.push(
+            newDisplay.push(
                 <div class="form-group d-flex flex-row">
                     <input 
                         class="form-control me-sm-2" 
@@ -48,12 +43,21 @@ export default function Eur(){
             );
         }
 
-        return display;
+        newDisplay.push(
+            <button type="button" class="btn btn-primary btn-sm" onClick={() => addParty()}>Ajouter un parti</button>
+        );
+
+        setDisplay(newDisplay);
+    }
+
+    function addParty() {
+        setParties(parties.push(["", 0]));
+        displayParties();
     }
 
     return(
         <div>
-
+            {display}
         </div>
     );
 }
