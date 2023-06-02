@@ -5,3 +5,7 @@
 .myChart {
     background-color: transparent !important;
 }
+
+.small-text-button {
+    font-size: 0.6em;
+}

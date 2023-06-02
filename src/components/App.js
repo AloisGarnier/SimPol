@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, Routes, Link} from "react-router-dom";
 
+import Main from "./Main";
 import Eur from "./Eur";
 import Leg from "./Leg";
 import Reg from "./Reg";
@@ -19,7 +20,7 @@ export default function App(){
         return(
             <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">SimPol</a>
+                    <Link class="navbar-brand" to="/">SimPol</Link>
                     <div class="navbar" id="navbarColor01">
                         <Link class="nav-link mx-2" to="/eur">Européennes</Link>
                         <Link class="nav-link mx-2" href="#">Législatives</Link>
@@ -36,6 +37,9 @@ export default function App(){
             {navBar()}
 
             <Routes>
+                <Route exact path="/" element = {
+                    <Main
+                />}></Route>
                 <Route exact path="/eur" element={
                     <Eur
                 />}></Route>

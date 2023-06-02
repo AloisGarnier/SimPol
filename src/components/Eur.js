@@ -17,24 +17,32 @@ export default function Eur(){
           value: "white"
         },
         {
-          label:"rouge",
-          value: '#EE0011'
+          label:"rouge sombre",
+          value: "#85060C"
+        },
+        {
+          label:"rouge vif",
+          value: "#E81502"
         },
         {
           label:"rose",
-          value: '#CC0099'
+          value: "#CC28C9"
         },
         {
           label:"orange",
-          value: "orange"
+          value: "#FFB53D"
         },
         {
           label:"jaune",
           value: '#FFCC00'
         },
         {
-          label:"vert",
-          value: '#448833'
+          label:"vert clair",
+          value: "#B7CC2B"
+        },
+        {
+          label:"vert foncé",
+          value: "#5D8A3E"
         },
         {
           label:"turquoise",
@@ -42,23 +50,23 @@ export default function Eur(){
         },
         {
           label:"bleu",
-          value: '#3366CC'
+          value: "#15498C"
         },
         {
           label:"violet",
-          value: "purple"
+          value: "#723E64"
         },
         {
           label:"brun",
-          value: "brown"
+          value: "#964B00"
         },
         {
           label:"gris",
-          value: "grey"
+          value: "#888888"
         },
         {
           label:"noir",
-          value: "black"
+          value: "#000000"
         }
     ];
 
