@@ -84,7 +84,6 @@ export default function Eur(){
     }
 
     function displayParties(){
-        console.log(parties);
         calculateSeats();
         let newDisplay = [];
 

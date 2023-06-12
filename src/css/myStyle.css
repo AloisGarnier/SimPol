@@ -9,3 +9,21 @@
 .small-text-button {
     font-size: 0.6em;
 }
+
+.report-form {
+    padding: 0 !important;
+}
+
+.mean-repartition {
+    margin-left: 200px !important;
+    width: 50% !important;
+}
+
+.dual-repartition {
+    margin-left: 100px !important;
+}
+
+.custom-map {
+    width: 500px !important;
+    height: 600px !important;
+}

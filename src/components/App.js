@@ -23,9 +23,9 @@ export default function App(){
                     <Link class="navbar-brand" to="/">SimPol</Link>
                     <div class="navbar" id="navbarColor01">
                         <Link class="nav-link mx-2" to="/eur">Européennes</Link>
-                        <Link class="nav-link mx-2" href="#">Législatives</Link>
-                        <Link class="nav-link mx-2" href="#">Régionales</Link>
-                        <Link class="nav-link mx-2" href="#">Municipales</Link>
+                        <Link class="nav-link mx-2" to="/leg">Législatives</Link>
+                        <Link class="nav-link mx-2" to="/reg">Régionales</Link>
+                        <Link class="nav-link mx-2" to="/mun">Municipales</Link>
                     </div>
                 </div>
             </nav>
