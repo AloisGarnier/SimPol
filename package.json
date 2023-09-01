@@ -1,7 +1,6 @@
 {
-  "name": "tp-react-tic-tac-toe",
+  "name": "simpol",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve --hot --open --mode development --port 3000",
@@ -35,5 +34,14 @@
     "webpack": "^5.76.2",
     "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^4.13.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AloisGarnier/SimPol.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AloisGarnier/SimPol/issues"
+  },
+  "homepage": "https://github.com/AloisGarnier/SimPol#readme",
+  "description": ""
 }

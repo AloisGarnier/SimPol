@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, Routes, Link} from "react-router-dom";
 
-import Main from "./Main";
 import Eur from "./Eur";
 import Leg from "./Leg";
 import Reg from "./Reg";
@@ -37,9 +36,6 @@ export default function App(){
             {navBar()}
 
             <Routes>
-                <Route exact path="/" element = {
-                    <Main
-                />}></Route>
                 <Route exact path="/eur" element={
                     <Eur
                 />}></Route>
